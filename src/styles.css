@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header */
+
+.logo-sony {
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  padding: 12px 10px 10px 0;
+}
+
+.logo-profile {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+}
+
+.logo-profile img:hover {
+  cursor: pointer;
+}
+
+.profile button,
+img,
+input {
+  margin-left: 10px;
+}
+
+.profile button {
+  color: #383838;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+}
+
+.profile button span {
+  color: #383838;
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.profile button:hover {
+  cursor: pointer;
+}
+
+.profile input {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 5px 2px 5px 2px;
+}
+
+.profile input:hover {
+  cursor: pointer;
+}
+
+/* New Game */
+
+.background-newgame {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+main .discover {
+  position: relative;
+  bottom: 740px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px 0 100px;
+}
+
+.discover p {
+  color: #c4c4c4;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.discover p:hover {
+  cursor: pointer;
+}
+
+.discover p span {
+  color: white;
+}
+
+.banner-price {
+  display: flex;
+  justify-content: space-between;
+  margin: -400px 95px 0 95px;
+}
+
+.banner-price .name-banner {
+  width: 35vh;
+}
+
+.banner-price .newgame-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.banner-price .newgame-price .ps5-banner {
+  width: 5vh;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.banner-price .newgame-price button {
+  background-color: #0072ce;
+  border: none;
+  padding: 6px 10px 6px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 7px;
+}
+
+.banner-price .newgame-price button:hover {
+  cursor: pointer;
+}
+
+/* Trending */
+
+.trending-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 95px 50px 95px;
+}
+
+.trending-title h2 {
+  color: white;
+}
+
+.trending-title button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding: 0 7px 0 7px;
+}
+
+.trending-title button:hover {
+  cursor: pointer;
+}
+
+.trending-cards card {
+  display: inline-block;
+}
+
+.trending-cards card .img-game {
+  filter: grayscale(10%) brightness(60%) contrast(100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  border-radius: 10px;
+}
+
+.trending-cards card img:not(last-child) {
+  margin-right: 15px;
+}
+
+/* Trending images 1 */
+
+.trending-cards card .ps4-logo-img1,
+.ps4-logo-img2,
+.ps4-logo-img3 {
+  position: absolute;
+  top: 780px;
+}
+
+.trending-cards card .ps4-logo-img1 {
+  /* configuration left*/
+  left: 100px;
+}
+
+.trending-cards card .text-img1,
+.text-img2,
+.text-img3 {
+  position: absolute;
+  top: 820px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.trending-cards card .text-img1 {
+  /* configuration left */
+  left: 127px;
+}
+
+.trending-cards card .price-img1,
+.price-img2,
+.price-img3 {
+  position: absolute;
+  top: 867px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+}
+
+.trending-cards card .price-img1 {
+  /* configuration left */
+  left: 312px;
+}
+
+.trending-cards card .button-img1,
+.button-img2,
+.button-img3 {
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: #0072ce;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 862px;
+}
+
+.trending-cards card .button-img1 {
+  /* configuration left*/
+  left: 369px;
+}
+
+.trending-cards card .button-img1:hover,
+.button-img2:hover,
+.button-img3:hover {
+  cursor: pointer;
+}
+
+/* Trending images 2 */
+
+.trending-cards card .ps4-logo-img2 {
+  left: 495px;
+}
+
+.trending-cards card .text-img2 {
+  /* configuration left */
+  left: 585px;
+}
+
+.trending-cards card .price-img2 {
+  left: 705px;
+}
+
+.trending-cards card .button-img2 {
+  left: 763px;
+}
+
+/* Trending images 3 */
+
+.trending-cards card .ps4-logo-img3 {
+  left: 895px;
+}
+
+.trending-cards card .text-img3 {
+  /* configuration left */
+  left: 895px;
+}
+
+.trending-cards card .price-img3 {
+  left: 1102px;
+}
+
+.trending-cards card .button-img3 {
+  left: 1159px;
+}
+
+/* New Releases Cards */
+
+.releases-games {
+  margin-left: 90px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.releases-games .card-games .img-card-games {
+  position: relative;
+  left: -9.52px;
+}
+
+.releases-games .card-games {
+  display: block;
+  background-color: transparent;
+  border: 0.5px solid #383838;
+  border-radius: 10px;
+  width: 173px;
+  padding: 0;
+  margin-right: 26px;
+  margin-top: 20px;
+}
+
+.releases-games .card-games h2 {
+  font-size: 0.9rem;
+  text-align: start;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: white;
+}
+
+.releases-games .card-games h3 {
+  font-size: 0.7rem;
+  text-align: start;
+  margin-left: 5px;
+  color: #c4c4c4;
+}
+
+.releases-games .card-games .logo-ps {
+  display: flex;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+.releases-games .card-games .button-releases-games {
+  width: 90%;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  background-color: #0072ce;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.releases-games .card-games .button-releases-games:hover {
+  cursor: pointer;
+}
+
+.releases-games .card-marginTop {
+  /* add marginTop in 2 line */
+  margin-top: 25px;
+}
+
+/* Ps Now */
+
+.psNow {
+  background-color: black;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+  margin-top: 50px;
+}
+
+.text-psNow {
+  margin-right: 450px;
+}
+
+.bg-psNow {
+  position: absolute;
+  top: 1706px;
+  left: -100px;
+  z-index: 1;
+}
+
+.game-psNow {
+  position: absolute;
+  top: 1682px;
+  right: 280px;
+  z-index: 2;
+}
+
+.psNow-img {
+  margin-top: -50px;
+}
+
+.psNow p {
+  color: white;
+  margin-top: -140px;
+}
+
+.psNow button {
+  margin-top: 30px;
+  margin-bottom: 105px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #383838;
+  border: 1px solid #0072ce;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  position: relative; /* In order to click on the button, due to the game image that has a z-index */
+  z-index: 10;
+}
+
+.psNow button:hover {
+  cursor: pointer;
+}
+
+/* Sales */
+
+.sales img:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* Ps Plus */
+
+.psPlus {
+  background-color: black;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+  margin-top: 50px;
+}
+
+.text-psPlus {
+  margin-right: 450px;
+}
+
+.bg-psPlus {
+  position: absolute;
+  top: 3706px;
+  left: -100px;
+  z-index: 1;
+}
+
+.game-psPlus {
+  position: absolute;
+  top: 3707px;
+  left: 640px;
+  z-index: 2;
+}
+
+.psPlus-img {
+  margin-top: 250px;
+  top: -150px;
+  position: relative;
+  z-index: 2;
+}
+
+.psPlus p {
+  color: white;
+  margin-top: -140px;
+  position: relative;
+  z-index: 3;
+}
+
+.psPlus button {
+  margin-top: 30px;
+  margin-bottom: 105px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fdd635;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  position: relative; /* In order to click on the button, due to the game image that has a z-index */
+  z-index: 10;
+}
+
+.psPlus button:hover {
+  cursor: pointer;
+}
+
+/* Collections */
+
+.img-collections {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+.img-collections .img-1 {
+  margin-right: 20px;
+}
+
+.model-img-collections2 img:not(last-child) {
+  margin-right: 20px;
+}
+
+/* Genres */
+
+.genres-img img:not(las-child) {
+  margin-right: 20px;
+}
+
+.genres-img img {
+  margin-bottom: 20px;
+}
+
+.genres-img img:hover {
+  cursor: pointer;
+}
+
+/* more */
+
+.more {
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.more-img img {
+  margin-bottom: 70px;
+}
+
+.more-img img:not(last-child) {
+  margin-right: 20px;
+}
+
+.more-img img:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+
+.Footer {
+  background-color: #065baa;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+.Footer img {
+  margin-bottom: 10px;
+}
+
+.Footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.Footer a:not(last-child) {
+  margin-right: 5px;
+}
+
+.Footer a:not(:last-child)::after {
+  content: " | ";
+}
+
+.Footer p {
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
